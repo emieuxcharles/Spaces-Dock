@@ -1,4 +1,4 @@
-# Spaces Dock 0.6.2 (21) — application locale
+# Spaces Dock 0.6.2 (21) — distribution directe
 
 L’application conserve son interface, les profils MacBook seul / avec un écran externe, l’ordre des apps dans le Dock Apple, le lancement à la connexion et la création des bureaux manquants. Aucun module de publication sur le Mac App Store n’est nécessaire. Le type AppStore dans le code désigne l’état de l’application, pas une intégration au magasin Apple.
 
@@ -28,6 +28,6 @@ Les appels lancés directement depuis le Terminal ne reproduisent pas les autori
 
 Ouvrir outputs/Spaces Dock.app, choisir le profil correspondant aux écrans et utiliser « Appliquer ce profil ». Autoriser l’accessibilité si macOS la demande. Sur le Mac courant, l’autorisation existante est reconnue.
 
-Le paquet est signé localement. Aucune nouvelle notarisation ni publication n’a été demandée. Les tests ne prouvent pas tous les scénarios de déconnexion, de connexion de session ou de branchement physique d’un écran externe. Les fonctions de bureaux reposent sur des interfaces privées de macOS : aucune garantie universelle de compatibilité future.
+Le paquet installé localement garde sa signature de développement stable. L’archive destinée à GitHub est signée Developer ID Application et a été acceptée par le service de notarisation Apple le 5 novembre 2026 (soumission d24fad0c-2844-4f37-acff-5a40b4f05187, aucun avertissement). Le ticket est agrafé et Gatekeeper accepte aussi la copie extraite du ZIP. Cette validation de distribution ne remplace pas les essais fonctionnels ci-dessus. Les tests ne prouvent pas tous les scénarios de déconnexion, de connexion de session ou de branchement physique d’un écran externe. Les fonctions de bureaux reposent sur des interfaces privées de macOS : aucune garantie universelle de compatibilité future.
 
 Les anciennes livraisons, guides, captures et prototypes sont rangés dans archives/2026-11-05. Aucun certificat ou identifiant du trousseau n’a été supprimé.

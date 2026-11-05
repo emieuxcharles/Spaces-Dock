@@ -6,6 +6,8 @@ Utilitaire macOS en français pour organiser les applications par écran et bure
 
 Les versions installables sont disponibles dans [Releases](https://github.com/emieuxcharles/Spaces-Dock/releases). Télécharger le ZIP de l’application dans les fichiers joints à la Release ; les archives « Source code » contiennent uniquement les sources.
 
+[Télécharger le ZIP de Spaces Dock 0.6.2](https://github.com/emieuxcharles/Spaces-Dock/releases/download/v0.6.2/Spaces-Dock-0.6.2-21-arm64.zip). Archive signée Developer ID et notarifiée par Apple. Préversion de validation.
+
 Version actuelle : **0.6.2 (21)**, MacBook Apple Silicon, **macOS 26 ou 27**. Le déplacement est testé sur macOS 27.2 ; le moteur macOS 26 est conservé avec ses tests de non-régression et les validations historiques sous 26.5.2. Les autres versions et les futures mises à jour majeures ne sont pas garanties compatibles. Voir [les vérifications et limites](docs/RELEASE.md).
 
 1. Quitter l’ancienne version de Spaces Dock.
