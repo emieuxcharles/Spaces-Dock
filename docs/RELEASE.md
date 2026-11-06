@@ -1,4 +1,10 @@
-# Spaces Dock 0.6.2 (21) — distribution directe
+# Spaces Dock 0.6.3 (22)
+
+Sous macOS 27, Mission Control expose les contrôles d’ajout de bureaux via WindowManager. Spaces Dock utilise cette arborescence sur macOS 27 et celle du Dock sur macOS 26.
+
+Lors de l’essai du 6 novembre 2026 sous macOS 27.2, Spaces Dock a créé automatiquement le bureau 3 du LG et placé les deux fenêtres de Cursor sur ce bureau. Une seconde application du profil a confirmé 11 fenêtres placées et trois bureaux sur le LG.
+
+## Spaces Dock 0.6.2 (21) — validation précédente
 
 L’application conserve son interface, les profils MacBook seul / avec un écran externe, l’ordre des apps dans le Dock Apple, le lancement à la connexion et la création des bureaux manquants. Aucun module de publication sur le Mac App Store n’est nécessaire. Le type AppStore dans le code désigne l’état de l’application, pas une intégration au magasin Apple.
 

@@ -4,11 +4,11 @@
 
 Notion sur le bureau 1, les terminaux sur le bureau 2, le navigateur sur le bureau 3… Spaces Dock mémorise cette organisation et replace les fenêtres quand tu appliques ton profil. Tu peux préparer une disposition pour ton MacBook seul et une autre avec un écran externe.
 
-**[Télécharger Spaces Dock 0.6.2 pour Mac Apple Silicon](https://github.com/emieuxcharles/Spaces-Dock/releases/download/v0.6.2/Spaces-Dock-0.6.2-21-arm64.zip)** · [Toutes les versions](https://github.com/emieuxcharles/Spaces-Dock/releases)
+**[Télécharger Spaces Dock 0.6.3 pour Mac Apple Silicon](https://github.com/emieuxcharles/Spaces-Dock/releases/download/v0.6.3/Spaces-Dock-0.6.3-22-arm64.zip)** · [Toutes les versions](https://github.com/emieuxcharles/Spaces-Dock/releases)
 
 App native en français · macOS 26 et 27 · Dock Apple conservé · ZIP signé et notarifié par Apple
 
-> La version 0.6.2 est une préversion de validation. Le placement a été testé sur macOS 27.2, avec des validations historiques sous 26.5.2. Consulte les [résultats et limites des essais](docs/RELEASE.md).
+> La version 0.6.3 est une préversion de validation. La création automatique d’un bureau sur un écran externe a été vérifiée sous macOS 27.2. Les essais de placement sous macOS 26.5.2 datent des versions précédentes. Consulte les [résultats et limites des essais](docs/RELEASE.md).
 
 ![Spaces Dock : les applications regroupées par bureau et l’aperçu de leur ordre dans le Dock](docs/images/profils-et-bureaux.png)
 
@@ -68,7 +68,7 @@ Tu peux aussi laisser les automatismes désactivés et utiliser **Appliquer ce p
 
 ## Installation et premier profil
 
-1. **Télécharge le [ZIP de l’application](https://github.com/emieuxcharles/Spaces-Dock/releases/download/v0.6.2/Spaces-Dock-0.6.2-21-arm64.zip).** Les liens « Source code » de GitHub contiennent les sources, pas l’app installable.
+1. **Télécharge le [ZIP de l’application](https://github.com/emieuxcharles/Spaces-Dock/releases/download/v0.6.3/Spaces-Dock-0.6.3-22-arm64.zip).** Les liens « Source code » de GitHub contiennent les sources, pas l’app installable.
 2. **Décompresse-le et déplace Spaces Dock.app dans Applications.** Pour une mise à jour, quitte d’abord l’ancienne version. Tes profils enregistrés sont conservés.
 3. **Ouvre l’app et autorise Accessibilité** dans Réglages Système → Confidentialité et sécurité → Accessibilité. Cette permission sert à créer les bureaux et à déplacer les fenêtres.
 4. **Choisis le profil adapté à tes écrans et ajoute tes apps avec le bouton +.** Affecte un écran et un bureau à chaque app, puis règle leur ordre.

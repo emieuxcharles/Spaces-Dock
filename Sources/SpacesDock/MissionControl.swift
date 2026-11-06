@@ -2,8 +2,8 @@ import AppKit
 import ApplicationServices
 import SpacesCore
 
-/// One bounded Mission Control session for the whole profile. Uses the Dock's
-/// accessibility identifiers, not localized button titles or screen coordinates.
+/// One bounded Mission Control session for the whole profile. Uses system
+/// accessibility identifiers and display IDs to find the target screen.
 /// Reference: Hammerspoon hs.spaces (mc.display / AXDisplayID / mc.spaces.add).
 @MainActor
 private final class MissionControlSession {
@@ -28,8 +28,15 @@ private final class MissionControlSession {
     private func identifier(_ element: AXUIElement) -> String? { value(element, kAXIdentifierAttribute) as? String }
     private func group() -> AXUIElement? {
         probeDeadline = ProcessInfo.processInfo.systemUptime + 0.8
-        guard let dock = NSRunningApplication.runningApplications(withBundleIdentifier: "com.apple.dock").first else { return nil }
-        let element = AXUIElementCreateApplication(dock.processIdentifier)
+        // macOS 27 exposes mc.display directly under WindowManager. On macOS 26
+        // the display groups are children of the Dock's mc group.
+        let usesWindowManager = ProcessInfo.processInfo.operatingSystemVersion.majorVersion >= 27
+        let ownerID = usesWindowManager ? "com.apple.WindowManager" : "com.apple.dock"
+        guard let owner = NSRunningApplication.runningApplications(withBundleIdentifier: ownerID).first else { return nil }
+        let element = AXUIElementCreateApplication(owner.processIdentifier)
+        if usesWindowManager {
+            return children(element).contains { identifier($0) == "mc.display" } ? element : nil
+        }
         return children(element).first { identifier($0) == "mc" }
     }
     private func check() throws -> [LiveDisplay] {
